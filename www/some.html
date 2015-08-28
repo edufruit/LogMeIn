@@ -20,9 +20,12 @@ Hello, <div id="custname"></div>
 	function setcustomerdetails()
 	{
 
-		$('#custname').html(window.localStorage["customername"]);
+		$('#custname').html('<b>'+window.localStorage["customername"]+'<b>');
 
 	}
 	
 	$().ready(function(){ setcustomerdetails(); });
 </script>
+
+</body>
+</html>
