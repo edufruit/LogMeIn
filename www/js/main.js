@@ -34,7 +34,8 @@ if(res.result == true) {
 window.localStorage["username"] = u;
 window.localStorage["password"] = p;
 window.localStorage["customername"] = res.customername;
-$.mobile.changePage("some.html");
+//$.mobile.changePage("some.html");
+$("body").pagecontainer("change", "some.html", {  }); 
 } else {
 navigator.notification.alert("Your login failed", function() {});
 }
