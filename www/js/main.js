@@ -57,7 +57,7 @@ document.addEventListener("deviceready", deviceReady, true);
 									
 									window.localStorage["customername"] = res.customername;
 									
-									alert('answer='+res.customername);
+									alert('reply='+res.customername);
 									
 									//$.mobile.changePage("some.html");
 									
