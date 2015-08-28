@@ -43,13 +43,31 @@ document.addEventListener("deviceready", deviceReady, true);
 		{
 		
 			alert('Authenticating Your Credentials...');
-					$.mobile.pageContainer.pagecontainer('change', "some.html", {
+					
+					$.ajax({
+		type: 'POST',
+		data: 'username='+u+'&password='+p,
+		url: 'http://www.edufruit.com/app_customerdetails.php',
+		success: function(data){
+			
+			console.log(data);
+			
+			alert('Your comment was successfully added');
+			
+						$.mobile.pageContainer.pagecontainer('change', "some.html", {
 										
 									  transition: 'flow',
 									  
 									  reload    : true
 									  
 									});					
+		},
+		error: function(){
+			console.log(data);
+			alert('There was an error adding your comment');
+		}
+	});
+		
 		/*
 			$.post("http://www.edufruit.com/app_customerdetails.php?method=login&returnformat=json", {username:u,password:p}, function(res) {
 			 
