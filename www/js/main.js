@@ -43,8 +43,14 @@ document.addEventListener("deviceready", deviceReady, true);
 		{
 		
 			alert('Authenticating Your Credentials...');
-									
-		
+					$.mobile.pageContainer.pagecontainer('change', "some.html", {
+										
+									  transition: 'flow',
+									  
+									  reload    : true
+									  
+									});					
+		/*
 			$.post("http://www.edufruit.com/app_customerdetails.php?method=login&returnformat=json", {username:u,password:p}, function(res) {
 			 
 			 
@@ -76,13 +82,18 @@ document.addEventListener("deviceready", deviceReady, true);
 			} 
 			else 
 			{
+				
+				alert('Sorry');
+				
 				navigator.notification.alert("Your login failed", function() {});
+				
 			}
 			
 			$("#submitButton").removeAttr("disabled");
 
 			},"json");
-			
+				
+				*/
 
 		} 
 		else 
