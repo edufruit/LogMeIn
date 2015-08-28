@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+id        = "io.cordova.logmeingy"
+xmlns:gap = "http://phonegap.com/ns/1.0"    
+version   = "2.0.0">
+
+
+<name>LogMeIn</name>
+
+<description>
+Login Demo App
+</description>
+
+<author href="YOUR URL" email="YOUR EMAIL">
+Gaurav Yadav
+</author>
+
+<access origin="*"/>
+ 
+<content src="index.html" /> 
+ 
+<gap:platform name="android" />
+<preference name="loglevel" value="DEBUG"/> 
+<preference name='phonegap-version' value='cli-5.1.1'/>
+<preference name="permissions" value="none"/>
+<preference name="orientation" value="default"/>
+<preference name="target-device" value="universal"/>
+<preference name="fullscreen" value="false"/>
+<preference name="webviewbounce" value="true"/>
+<preference name="prerendered-icon" value="true" />
+<preference name="stay-in-webview" value="false" />
+<preference name="ios-statusbarstyle" value="black-opaque" />
+<preference name="detect-data-types" value="true" />
+<preference name="exit-on-suspend" value="false" />  
+<preference name="disable-cursor" value="false" />
+<preference name="android-minSdkVersion" value="7" />
+<preference name="android-installLocation" value="auto" />   
+
+</widget>
