@@ -1,11 +1,11 @@
 
 function init() {
 document.addEventListener("deviceready", deviceReady, true);
-delete init;
+//delete init;
 }
 
 	function checkPreAuth() {
-
+alert(2);
 		var form = $("#loginForm");
 		
 		if(window.localStorage["username"] != undefined && window.localStorage["password"] != undefined) 
@@ -18,6 +18,8 @@ delete init;
 	}
 
 function handleLogin() {
+	alert('handling your login');
+	
 var form = $("#loginForm");
 //disable the button so we can't resubmit while we wait
 $("#submitButton",form).attr("disabled","disabled");
@@ -48,6 +50,8 @@ return false;
 
 function deviceReady() {
 
-$("#loginForm").on("submit",handleLogin);
+	alert('in device ready function');
+//$("#loginForm").on("submit",handleLogin);
 
+//$("#loginForm").click(function(){ handleLogin(); });
 }
