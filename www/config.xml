@@ -6,10 +6,10 @@ xmlns:gap = "http://phonegap.com/ns/1.0"
 version   = "2.0.0">
 
 
-<name>LogMeIn</name>
+<name>Pairipona</name>
 
 <description>
-Login Demo App
+Pairipona App
 </description>
 
 <author href="YOUR URL" email="YOUR EMAIL">
