@@ -17,6 +17,11 @@ Gaurav Yadav
 </author>
 
 <access origin="*"/>
+<access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+
+<access origin="http://edufruit.com" />
+ 
+<access origin=".*"/>
  
 <content src="index.html" /> 
  
